@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    display: inline-block;
+}
+
+.typed-animate {
+    margin-top: 5px;
+    border-right: .15rem solid crimson;
+    white-space: nowrap;
+    color: crimson;
+    letter-spacing: 2px;
+    overflow: hidden;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2s forwards;
+    /* steps(20, end)  speed slow or first motion*/
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
